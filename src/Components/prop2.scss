@@ -1,0 +1,30 @@
+#scroll_container {
+    position: fixed;
+    white-space: nowrap;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .wrapper {
+        transition: all ease 0.4s;
+        transform-origin: center;
+        cursor: grab;
+
+        &.drag {
+            cursor: grabbing;
+            transform: scale(0.93);
+        }
+    }
+}
+
+.bloc {
+    display: inline-block;
+    width: 440px;
+    height: 300px;
+    background: black;
+    margin: 25px;
+}
